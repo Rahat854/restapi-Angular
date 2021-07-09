@@ -1,8 +1,22 @@
 {
-  "organizations" : [
+  "organizations": [
     {
-      "name": "DIU"
+      "name": "Dhaka International University",
+      "id": 1
     }
   ],
-  "students" : []
+  "users": [
+    {
+      "email": "admin@test.com",
+      "password": "$2a$10$hc3bzvl7rdHtn047R8BJLOBCgiS820kCnSmmcfbWMzgggQF1.DkBS",
+      "id": 1,
+      "userId": 1
+    },
+    {
+      "email": "admition@test.com",
+      "password": "$2a$10$xsuYX9FhmKx2Sgmu6AnhMeAE6sn.5Gixg5HctpRI4cyB2JF8KZIEi",
+      "id": 2
+    }
+  ],
+  "sessions": []
 }
