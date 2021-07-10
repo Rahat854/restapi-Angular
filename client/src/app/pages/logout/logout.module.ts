@@ -6,12 +6,15 @@ import {LogoutComponent} from "./logout.component";
 
 
 @NgModule({
-  declarations: [
-    LogoutComponent
-  ],
-  imports: [
-    CommonModule,
-    LogoutRoutingModule
-  ]
+    declarations: [
+        LogoutComponent
+    ],
+    exports: [
+        LogoutComponent
+    ],
+    imports: [
+        CommonModule,
+        LogoutRoutingModule
+    ]
 })
 export class LogoutModule { }
