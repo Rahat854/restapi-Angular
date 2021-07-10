@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {LogoutComponent} from "./pages/logout/logout.component";
+import {RegisterComponent} from "./pages/register/register.component";
+import {LoginComponent} from "./pages/login/login.component";
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LogoutComponent,
+    LogoutComponent,
+    RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
