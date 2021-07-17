@@ -7,19 +7,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {LoginModule} from "./pages/login/login.module";
 import {LogoutModule} from "./pages/logout/logout.module";
 import {RegisterModule} from "./pages/register/register.module";
+import {LoginComponent} from "./pages/login/login.component";
 @NgModule({
   declarations: [
-    AppComponent
-
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
     LoginModule,
     LogoutModule,
-    RegisterModule
+    RegisterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

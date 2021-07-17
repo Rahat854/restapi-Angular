@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {LoginComponent} from "./pages/login/login.component";
+
 
 const routes: Routes = [
   {
-    path : 'login',
+    path : 'app-login',
     loadChildren : () => import('./pages/login/login.module').then (m => m.LoginModule)
   },
   {
@@ -16,17 +18,17 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
+    loadChildren: () => import('./pages/login/login.module').then(m =>m.LoginModule)
   },
   {
     path : '**',
-    redirectTo: 'login'
+    redirectTo: 'login',
+    pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {enableTracing: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

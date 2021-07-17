@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { LogoutRoutingModule } from './logout-routing.module';
 import {LogoutComponent} from "./logout.component";
+import {LoginComponent} from "../login/login.component";
 
 
 @NgModule({
     declarations: [
-        LogoutComponent
+      LogoutComponent
     ],
     exports: [
-        LogoutComponent
     ],
     imports: [
         CommonModule,
